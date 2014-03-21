@@ -12,3 +12,5 @@ accounts-facebook
 accounts-google
 accounts-twitter
 accounts-ui
+iron-router
+spin
