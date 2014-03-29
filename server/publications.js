@@ -1,6 +1,10 @@
-Meteor.publish('posts', function() {
-    return Posts.find();
+Meteor.publish('posts', function(options) {
+  return Posts.find({}, options);
 });
+// More secure:
+// Meteor.publish('posts', function(sort, limit) {
+//   return Posts.find({}, {sort: sort, limit: limit});
+// });
 Meteor.publish('comments', function(postId) {
   return Comments.find({postId: postId});
 });
