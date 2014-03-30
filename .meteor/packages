@@ -3,16 +3,16 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-preserve-inputs
 standard-app-packages
 bootstrap
-iron-router
-spin
-accounts-base
-accounts-ui-bootstrap-dropdown
-accounts-ui-bootstrap-3
-accounts-password
-blaze-layout
-errors
 bootstrap-3
+blaze-layout
+iron-router
 iron-router-progress
+accounts-base
+accounts-password
+accounts-ui
+accounts-ui-bootstrap-3
+errors
+spin
+mathjax

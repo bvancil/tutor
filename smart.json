@@ -1,11 +1,12 @@
 {
   "packages": {
-    "iron-router": {},
-    "spin": {},
-    "errors": {},
     "bootstrap-3": {},
-    "accounts-ui-bootstrap-3": {},
+    "blaze-layout": {},
+    "iron-router": {},
     "iron-router-progress": {},
-    "accounts-ui-bootstrap-dropdown": {}
+    "accounts-ui-bootstrap-3": {},
+    "errors": {},
+    "spin": {},
+    "mathjax": {}
   }
 }
