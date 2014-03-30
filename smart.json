@@ -2,7 +2,8 @@
   "packages": {
     "iron-router": {},
     "spin": {},
-    "accounts-ui-bootstrap-dropdown": {},
-    "errors": {}
+    "errors": {},
+    "bootstrap-3": {},
+    "accounts-ui-bootstrap-3": {}
   }
 }
