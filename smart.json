@@ -4,6 +4,8 @@
     "spin": {},
     "accounts-ui-bootstrap-dropdown": {},
     "iron-router-progress": {},
-    "errors": {}
+    "errors": {},
+    "roles": {},
+    "accounts-admin-ui": {}
   }
 }

@@ -1,5 +1,23 @@
 // Fixture data 
 if (Posts.find().count() === 0) {
+  // Create roles
+  var userRoles = ['admin', 'user-admin', 'give-tokens', 'take-tokens'];
+  _.each(userRoles, function(role) {
+    Roles.createRole(role);
+  });   
+
+  // One-time script to create AdminUser variable and a few roles.
+  createUserAdminRoles();
+
+  // Create superuser:
+  var rootId = Accounts.createUser({
+    username: "monkey",
+    email: "",
+    password: "monkey",
+    profile: { name: "monkey" }
+  });
+  Roles.addUsersToRoles(rootId, ['give-tokens', 'take-tokens', 'admin', 'user-admin']);
+
   var now = new Date().getTime();
 
   // create two users

@@ -9,3 +9,7 @@
 /mathjax
 /module-loader
 /meteor-errors
+/roles
+/accounts-admin-ui
+/jquery-ui
+/jqbootstrapvalidation
