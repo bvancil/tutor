@@ -5,3 +5,7 @@ Handlebars.registerHelper('pluralize', function(number, singularNoun, pluralNoun
 	else
 	  return number + ' ' + pluralNoun;
 });
+
+Handlebars.registerHelper('isAdminUser', function() {
+  return Roles.userIsInRole(Meteor.user(), ['admin']);
+});
