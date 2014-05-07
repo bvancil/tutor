@@ -1,7 +1,24 @@
 // Fixture data 
 if (Posts.find().count() === 0) {
   // Create roles
-  var userRoles = ['admin', 'user-admin', 'give-tokens', 'take-tokens'];
+  var userRoles = ['admin', 'user-admin', 'give-tokens', 'take-tokens','1','2','3','4','5','6','7','8', 'ETM', 'CVPM', 'MTM', 'BFPM', 'CAPM', 'UFPM'];
+  /*
+    admin: superuser
+    user-admin: can administer users
+    give-tokens: can assign students tokens for doing tutoring so that they can reassess
+    take-token: can remove tokens from students
+    1,2,3,4,5,6,7,8: which period the student is in
+
+    One idea I have is to have tokens be roles.  Then the admin interface can be used to add or remove them.  They can be used in a standard way to check if students are allowed to schedule an assessment.
+    The tokens would be:
+    ETM: Energy Transfer Model
+    CVPM: Constant Velocity Particle Model
+    MTM: Momentum Transfer Model
+    BFPM: Balanced Force Particle Model
+    CAPM: Constant Acceleration Particle Model
+    UFPM: Unbalanced Force Particle Model
+
+  */
   _.each(userRoles, function(role) {
     Roles.createRole(role);
   });   
